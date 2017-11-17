@@ -113,7 +113,6 @@ Page({
     })
   },
   creatAudio: function (url) {
-    this.innerAudioContext = wx.createInnerAudioContext()
     this.innerAudioContext.src = url;
     this.innerAudioContext.onCanplay(() => {
       this.innerAudioContext.play()
@@ -129,6 +128,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.innerAudioContext = wx.createInnerAudioContext()
     this.getSongInfor(options.songId)
   },
   /**
@@ -155,7 +155,8 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    console.log(this.innerAudioContext)
+    this.innerAudioContext.pause()
   },
 
   /**
