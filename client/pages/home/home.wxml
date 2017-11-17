@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml-->
+<scroll-view scroll-y enable-back-to-top="{{isTrue}}">
+  <view wx:for="{{requestResult}}" class="viewItem" id="viewItem{{index}}" data-songId="{{item.song_id}}"  bindtap="tapItem">
+    <view >
+      <image src="{{item.pic_small}}" mode="aspectFit" class="imgview"></image>
+    </view>
+    <view class="itemRight">
+      <text class="songerTitle">{{item.title}}</text>
+      <text class="songerTitle">{{item.artist_name}} - {{item.style}} - {{item.language}}</text>
+    </view>
+  </view>
+</scroll-view>

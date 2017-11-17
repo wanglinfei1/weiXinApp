@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/addCgi/addCgi",
+    "pages/home/home",
+    "pages/song/song"
+  ],
+  "window":{
+    "backgroundColor":"#F6F6F6",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "wlfApp",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#1296db",
+    "selectedColor":"#13227a",
+    "borderStyle":"black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "app",
+        "iconPath": "./images/love.png",
+        "selectedIconPath": "./images/love-select.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "home",
+        "iconPath": "./images/home.png",
+        "selectedIconPath":"./images/home-select.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

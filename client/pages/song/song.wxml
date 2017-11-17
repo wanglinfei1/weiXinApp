@@ -1,0 +1,30 @@
+<!--pages/song/song.wxml-->
+<view class="container">
+    <image src="{{songinfo.pic_premium}}" class="bgImage" mode="center"></image>
+    <view class="bgOpaction"></view>
+    <view class="audioView">
+      <image src="../../images/filmReel.png" class="filmReel"></image>
+      <image src="{{songinfo.pic_small}}" class="filmReel animateImage"></image>
+      <view class="musicTitle">
+        <text>{{file_duration}}</text>
+      </view>
+      <slider bindchange="sliderChange"
+              min="0" activeColor="#1296db"
+              value="{{currentTime}}"
+              max="{{file_duration}}" step="1"/>
+      <view class="audioButton">
+        <view class="iconView">
+          <image src="{{playStateIcon}}" class="imgIcon" bindtap="playStateChange"></image>
+        </view>
+        <view class="iconView">
+          <image src="{{playStateType?'../../images/play.png':'../../images/pause-filled.png'}}" class="imgIcon" bindtap="audioPlay"></image>
+        </view>
+        <view class="iconView">
+          <image src="../../images/iconfont-pr.png" class="imgIcon" ></image>
+        </view>
+        <view class="iconView">
+          <image src="../../images/iconfont-next.png" class="imgIcon" ></image>
+        </view>
+      </view>
+    </view>
+</view>

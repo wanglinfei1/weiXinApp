@@ -1,0 +1,76 @@
+/* pages/song/song.wxss */
+page {
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: row;
+    height:100%;
+    flex:1;
+    justify-content: center;
+}
+.container{
+  display: flex;
+  flex:1;
+  height:100%;
+  flex-direction: row;
+}
+.bgImage{
+  display: flex;
+  flex:1;
+  height:100%;
+  flex-direction: row;
+}
+.bgOpaction{
+  position:absolute;
+  width: 100%;
+  height:100%;
+  background-color:#000;
+  opacity:0.4;
+}
+.audioView{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.filmReel{
+  width:440rpx;
+  height:440rpx;
+}
+.animateImage{
+  position: absolute;
+  right:0;
+  left:0;
+  top:80rpx;
+  margin:auto;
+  width:280rpx;
+  height:280rpx;
+  border-radius: 140rpx;
+}
+.progress{
+  margin:0 20rpx;
+  margin-top:120rpx;
+}
+.audioButton{
+  margin-top:20rpx;
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.audio{
+  display:none;
+}
+.imgIcon{
+  width:80rpx;
+  height:80rpx;
+}
+.iconView{
+  margin-top:20rpx;
+  display: flex;
+  text-align: center;
+  flex:1;
+  justify-content: center;
+  align-items: center;
+}
+.musicTitle{
+  color:#1296db
+}
