@@ -1,6 +1,6 @@
 <!--pages/song/song.wxml-->
 <view class="container">
-    <image src="{{songinfo.pic_premium}}" class="bgImage" mode="center"></image>
+    <image src="{{songinfo.pic_premium}}" class="bgImage" mode="aspectFill"></image>
     <view class="bgOpaction"></view>
     <view class="audioView">
       <image src="../../images/filmReel.png" class="filmReel"></image>
@@ -14,7 +14,7 @@
               max="{{file_duration}}" step="1"/>
       <view class="audioButton">
         <view class="iconView">
-          <image src="{{playStateIcon}}" class="imgIcon" bindtap="playStateChange"></image>
+          <i class="iconfont icon-danquxunhuan imgIcon1" bindtap="playStateChange"></i>
         </view>
         <view class="iconView">
           <image src="{{playStateType?'../../images/play.png':'../../images/pause-filled.png'}}" class="imgIcon" bindtap="audioPlay"></image>

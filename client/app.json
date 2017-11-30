@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/home/home",
     "pages/index/index",
     "pages/addCgi/addCgi",
-    "pages/home/home",
     "pages/song/song"
   ],
   "window":{
@@ -18,16 +18,16 @@
     "borderStyle":"black",
     "list": [
       {
+        "pagePath": "pages/home/home",
+        "text": "home",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home-select.png"
+      },
+      {
         "pagePath": "pages/index/index",
         "text": "app",
         "iconPath": "./images/love.png",
         "selectedIconPath": "./images/love-select.png"
-      },
-      {
-        "pagePath": "pages/home/home",
-        "text": "home",
-        "iconPath": "./images/home.png",
-        "selectedIconPath":"./images/home-select.png"
       }
     ]
   },
